@@ -38,6 +38,15 @@
     justify-content: space-around;
     align-items: center;
 }
+#FactbookDisplay2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+#FactbookDisplay2Right {
+    width: 500px;
+}
 
 /*Classes*/
 .textBlock {
@@ -45,6 +54,10 @@
     padding-left: 5%;
     padding-right: 5%;
     font-size: 20px;
+}
+.divTextBlock {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .sideFloatImage {
     width: 500px;
