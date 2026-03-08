@@ -82,6 +82,12 @@
     padding-right: 5px;
     flex-shrink: none;
 }
+#NPCDis {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    alignment-baseline: space-around;
+}
 
 /*Classes*/
 .textBlock {
@@ -116,8 +122,8 @@ hr {
 }
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
+    background-color: lightcyan;
+}  
 form {
     background-color: pink;
     padding: 5px;
