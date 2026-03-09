@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>D&D NPC Generator Project</title>
         <link rel="stylesheet" href = "../style.css">
+        <script src = "../script.js"></script>
     </head>
     <body>
         <!--Navbar-->
@@ -13,15 +14,19 @@
             <li><a class = "active" href = "DDNpcGen.html">D&D NPC Generator</a></li>
             <li><a href = "factbook.html">Factbook Project</a></li>
         </ul>
+        <form id = "info">
+            <h3></h3>
+            <p></p>
+        </form>
         <!--In every file, any content must be 3 <br> after the navbar-->
         <br><br><br>
-        <h1>Dungeons and Dragons NPC Generator</h1>
+        <h1>D&D NPC Generator</h1>
         <br>
         <hr>
         <br><br>
         <div id = "NPCDis">
             <p class = "textBlock">
-                Many people running D&D games, or any games for that matter, run into the problem of making NPCs.
+                Many people running D&D<span class = "DD" onmouseover = "infoDD()" onmouseleave = 'modifyInfo("0%", "", "")'>&#65110;</span> games, or any games for that matter, run into the problem of making NPCs.
                 Whether you have to make a large amount of NPCs, or have to make them on the fly.
                 This is an easy to use generator that works completely offline and is still receiving updates adding more content and features.
             </p>
@@ -32,7 +37,7 @@
         <br><br>
         <h2>Skills</h2>
         <div id = "NPCSkills">
-            <div style = "width: 45%">
+            <div style = "width: 45%" class = "textSurround">
                 <h3>Python</h3>
                 <p>
                     I used python to build the entirety of this application. 
@@ -40,14 +45,14 @@
                     Finally I learned about using python programmes such as pip and pyinstaller to install libraries and export my project. 
                 </p>
             </div>
-            <div style = "width: 45%">
+            <div style = "width: 45%" class = "textSurround">
                 <h3>Storing Data using markup languages</h3>
                 <p>
-                    The applications contains a lot of data, all of which is stored using the markup language JSON.
+                    The applications contains a lot of data, all of which is stored using the markup language<span onmouseover = "infoMarkup()" onmouseleave = 'modifyInfo("0%", "", "")'>&#65110;</span> JSON.
                     I learned a lot about markup languages, and how to specifically decompile JSON, and have went on to learn more markup languages such as XML and YAML.
                 </p>
             </div>
-            <div>
+            <div class = "textSurround">
                 <h3>UI Design</h3>
                 <p>
                     I learned a lot about how to design UIs, to make them easy to use, and easy to access and understand for everyone.
@@ -56,11 +61,14 @@
             </div>
         </div>
         <hr>
-        <br>
-        <h3>Future Updates</h3>
-        <p class = "textBlock" style = "width: 80%">
-            I'm planning to overhaul how the pronoun generation works, then add the ability to create your own options for the generator.
-            
-        </p>
+        <br><br>
+        <div class = "textSurround">
+            <h3>Future Updates</h3>
+            <p class = "textBlock" style = "width: 80%">
+                I'm planning to overhaul how the pronoun generation works, then add the ability to create your own options for the generator.
+                
+            </p>
+        </div>
+        <p id = "coded">This ISN'T coded in</p>
     </body>
 </html>

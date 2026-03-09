@@ -5,6 +5,10 @@
     padding: 0;
 
     position: fixed;
+    opacity: 50%;
+}
+#navbar:hover {
+    opacity: 100%;
 }
 #navbar li {
     float: left;
@@ -75,7 +79,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    alignment-baseline: space-around;
+    align-content: space-around;
+
+    height: 350px;
 }
 #NPCSkills div {
     padding-left: 5px;
@@ -86,7 +92,31 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    alignment-baseline: space-around;
+    align-content: space-around;
+}
+#contact {
+    background-color: pink;
+    padding: 5px;
+    width: 250px;
+}
+#contact button {
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightskyblue;
+    border-radius: 2px;
+
+    background-color: lightblue;
+}
+#info {
+    border-color:blue;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 7px;
+    width: 40%;
+    margin-left: 55%;
+    opacity: 0%;
+    position: fixed;
+    background-color: white;
 }
 
 /*Classes*/
@@ -111,6 +141,13 @@
 .blue {
     background-color: lightskyblue;
 }
+.textSurround {
+    border-color: rgba(175, 255, 255, 0.5);
+    border-width: 7px;
+    border-style: solid;
+    border-radius: 5px;
+    
+}
 
 /*HTML Elements*/
 hr {
@@ -124,16 +161,17 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: lightcyan;
 }  
-form {
-    background-color: pink;
-    padding: 5px;
-    width: 250px;
-}
-form button {
-    border-style: solid;
-    border-width: 2px;
-    border-color: lightskyblue;
-    border-radius: 2px;
 
-    background-color: lightblue;
+tr {
+    height: auto;
+    font-size: auto;
+    border-style: none;
+    border-color: white;
+    border-radius: 0px;
+}
+tr:hover {
+    height: 50px;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 5px;
 }
