@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "style.css">
+        <script src = "script.js"></script>
         <title>Riley Steptoe's Portfolio</title>
     </head>
     <body>
@@ -13,6 +14,10 @@
             <li><a href = "Pages/DDNpcGen.html">D&D NPC Generator</a></li>
             <li><a href = "Pages/factbook.html">Factbook Project</a></li>
         </ul>
+        <form id = "info">
+            <h3></h3>
+            <p></p>
+        </form>
         <!--In every file, any content must be 3 <br> after the navbar-->
         <br><br><br>
         <h1>Riley's portfolio</h1>
@@ -26,6 +31,8 @@
                     Other than that, I'm mostly self taught. I'm proficient with Windows and can use Linux.
                     The programming languages I'm proficient with are C#, Python, and HTML and CSS.
                 </p>
+                <br>
+                <p>Also, if you see a question mark, try hovering over it.</p>
                 <br><br>
             </div>
             <div id = "miscAboutMe">
@@ -36,16 +43,16 @@
                         <td class = "pink"><a href = "https://github.com/rs-code-hk" target = "_blank">rs-code-hk</a></td>
                     </tr>
                     <tr>
-                        <td class = "pink">Full Name</td>
-                        <td class = "blue">Riley Christiaan Steptoe</td>
+                        <td class = "pink">Name</td>
+                        <td class = "blue">Riley</td>
                     </tr>
                     <tr>
                         <td class = "blue">Pronouns</td>
-                        <td class = "pink">She/It/They/Fae</td>
+                        <td class = "pink">She<span onmouseover = "modifyInfo('75%', 'Pronouns: She/Her', 'One of the 5 pronouns I go by is She/Her/Hers/Herself. For example: This is Riley, she really likes Celeste. Infact Celeste is her favourite game. This dice is hers, Riley picked it out herself.')" onmouseleave = "modifyInfo('0%', '', '')">&#65110;</span>/Fae<span onmouseover = "modifyInfo('75%', 'Pronouns: Fae/Faem', 'One of the 5 pronouns I go by is Fae/Faem/Faems/Faemself. For example: This is Riley, fae really likes Celeste. Infact Celeste is faems favourite game. This dice is faems, Riley picked it out faemself.')" onmouseleave = "modifyInfo('0%', '', '')">&#65110;</span>/Write<span onmouseover = "modifyInfo('75%', 'Pronouns: Write/Writes', 'One of the 5 pronouns I go by is Write/Writes/Writes/Writeself. I like both writing code and creative writing. For example: This is Riley, write really likes Celeste. Infact Celeste is writes favourite game. This dice is writes, Riley picked it out writeself.')" onmouseleave = "modifyInfo('0%', '', '')">&#65110;</span>/It<span onmouseover = "modifyInfo('75%', 'Pronouns: It/Its', 'One of the 5 pronouns I go by is It/Its/Its/Itself. For example: This is Riley, it really likes Celeste. Infact Celeste is its favourite game. This dice is its, Riley picked it out itself.')" onmouseleave = "modifyInfo('0%', '', '')">&#65110;</span>/They<span onmouseover = "modifyInfo('75%', 'Pronouns: They/Them', 'One of the 5 pronouns I go by is They/Them/Theirs/Themself. For example: This is Riley, they really likes Celeste. Infact Celeste is their favourite game. This dice is theirs, Riley picked it out themself.')" onmouseleave = "modifyInfo('0%', '', '')">&#65110;</span><a href = "https://en.pronouns.page/are/she&it&they&fae" target = "_blank">More detailed explanation</a></td>
                     </tr>
                     <tr>
-                        <td class = "pink">Age</td>
-                        <td class = "blue">15</td>
+                        <td class = "pink">Current Education</td>
+                        <td class = "blue">Western Springs College</td>
                     </tr>
                     <tr>
                         <td class = "blue">Degree</td>
@@ -68,5 +75,15 @@
             <input type="text" name="Message" required>
             <button type="submit">Send</button>
         </form>
+        <br><br><br><br><br>
     </body>
+    <footer>
+        <p>Thank you for reading this website, if you want to see more of my projects, or talk to me, contact me using the form above. 
+            I'll try to respond to everyone. Or you could check out . . .</p>
+            <br>
+        <div id = "footerFlex">
+            <a href = "https://www.youtube.com/@HollowMythology-eu7hz" target = "_blank"><img src="Images/yt_logo.png" style = "height: 200px;"></a>
+            <a href = "https://www.youtube.com/@HollowMythology-eu7hz" target = "_blank"><img src="Images/GitHub_Invertocat_Black_Clearspace.png" style = "height: 200px;"></a>
+        </div>
+    </footer>
 </html>

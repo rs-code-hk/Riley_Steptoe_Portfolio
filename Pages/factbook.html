@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Factbook Project</title>
         <link rel="stylesheet" href = "../style.css">
+        <script src = "../script.js"></script>
     </head>
     <body>
         <!--Navbar-->
@@ -13,6 +14,10 @@
             <li><a href = "DDNpcGen.html">D&D NPC Generator</a></li>
             <li><a class = "active" href = "factbook.html">Factbook Project</a></li>
         </ul>
+        <form id = "info">
+            <h3></h3>
+            <p></p>
+        </form>
         <!--In every file, any content must be 3 <br> after the navbar-->
         <br><br><br>
         <h1>Factbook</h1>
@@ -36,25 +41,42 @@
             <div id = "FactbookDisplay2Right">
                 <h2>Skills Learnt</h2>
                 <br>
-                <h3>HTML & CSS</h3>
-                <p class = "divTextBlock" style = "font-size: 18px;">
-                    I learned to use the programming languages HTML and CSS to create professional looking websites.
-                    This includes creating a navigation bar to link back to the homepage and navigate throughout my page.
-                    I used many HTML elements to create this, and used "Flexbox" to align the items on the page. 
-                </p>
+                <div class = "textSurround">
+                    <h3>HTML & CSS</h3>
+                    <p class = "divTextBlock" style = "font-size: 18px;">
+                        I learned to use the programming languages HTML and CSS to create professional looking websites.
+                        This includes creating a navigation bar to link back to the homepage and navigate throughout my page.
+                        I used many HTML elements to create this, and used "Flexbox<span onmouseover = "modifyInfo('75%', 'Flexbox', 'Flexbox is a set of CSS options that allows you to control where elements appear on the page.')" onmouseleave = "modifyInfo('0%', '', '')">&#65110;</span>" to align the items on the page. 
+                    </p>
+                </div>
                 <br>
-                <h3>Github</h3>
-                <p class = "divTextBlock" style = "font-size: 18px;">
-                    To colaborate with my groupmates, I used the online repository hosting service github,
-                    and github desktop to fetch the pull the repository, make my changes, then push to save my changes to the cloud.
-                    Using programs like this is industry standard, and I have gained skills that I can use in the workplace. 
-                </p>
-                <h3>Attribudation</h3>
-                <p class = "divTextBlock" style = "font-size: 18px;">
-                    The project contains several images, all of which have been taken from wikimedia commons and appropriately accredited. 
-                    I also learned about the different types of copyrights and creative commons attributions. 
-                </p>
+                <div class = "textSurround">
+                    <h3>Github</h3>
+                    <p class = "divTextBlock" style = "font-size: 18px;">
+                        To colaborate with my groupmates, I used the online repository hosting service github,
+                        and github desktop to fetch the pull the repository, make my changes, then push to save my changes to the cloud.
+                        Using programs like this is industry standard, and I have gained skills that I can use in the workplace. 
+                    </p>
+                </div>
+                <br>
+                <div class = "textSurround">
+                    <h3>Attribudation</h3>
+                    <p class = "divTextBlock" style = "font-size: 18px;">
+                        The project contains several images, all of which have been taken from wikimedia commons and appropriately accredited. 
+                        I also learned about the different types of copyrights and creative commons attributions. 
+                    </p>
+                </div>
             </div>
         </div>
+        <br><br><br><br><br>
     </body>
+    <footer>
+        <p>Thank you for reading this website, if you want to see more of my projects, or talk to me, contact me using the form above. 
+            I'll try to respond to everyone. Or you could check out . . .</p>
+            <br>
+        <div id = "footerFlex">
+            <a href = "https://www.youtube.com/@HollowMythology-eu7hz" target = "_blank"><img src="../Images/yt_logo.png" style = "height: 200px;"></a>
+            <a href = "https://www.youtube.com/@HollowMythology-eu7hz" target = "_blank"><img src="../Images/GitHub_Invertocat_Black_Clearspace.png" style = "height: 200px;"></a>
+        </div>
+    </footer>
 </html>
