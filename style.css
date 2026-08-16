@@ -129,6 +129,14 @@
     flex-flow: row nowrap;
     justify-content: space-around;
 }
+#textAdventureImages {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+#textAdventureImages img {
+    width: 500px;
+}
 
 /*Classes*/
 .textBlock {
