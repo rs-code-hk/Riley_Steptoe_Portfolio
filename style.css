@@ -136,6 +136,12 @@
 }
 #textAdventureImages img {
     width: 500px;
+    height: 100%;
+}
+#textAdventureText {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 
 /*Classes*/
