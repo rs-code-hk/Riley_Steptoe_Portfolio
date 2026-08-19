@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 175px;
+    width: 150px;
     height: 60px;
 }
 #navbar li a:hover:not(.active) {
