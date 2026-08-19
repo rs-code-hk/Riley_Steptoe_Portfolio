@@ -143,6 +143,14 @@
     flex-flow: row nowrap;
     justify-content: space-around;
 }
+#blenderSkills {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+#blenderSkills div {
+    width: 50%;
+}
 
 /*Classes*/
 .textBlock {
